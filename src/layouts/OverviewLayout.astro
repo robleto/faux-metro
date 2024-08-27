@@ -15,41 +15,40 @@ const { frontmatter } = Astro.props;
   />
   <div class="relative z-30 flex flex-col justify-end">
     <p 
-      class="p-0 m-0 mb-[-12px] leading-none text-gray-300 uppercase"
-      style="font-size: clamp(1.2rem, 2vw, 2.6rem);" 
+      class="p-0 m-0  md-[-8px] md:mb-[-12px] leading-none text-gray-300 uppercase text-md md:text-2xl"
     >
       {frontmatter.lede}
     </p>
     <h1 
-      class="p-0 m-0 font-bold leading-none text-white"
-      style="font-size: clamp(4rem, 10vw, 11.25rem); margin-bottom: -1rem"  
+      class="p-0 m-0 font-bold leading-none text-white mb-[-0.5rem] text-5xl md:text-8xl md:mb-[-0.75rem]"
     >
       {frontmatter.title}
     </h1>
   </div>
 </section>
 
-<h2 class="relative flex w-full px-8 py-4 italic tracking-tight text-gray-800 bg-white justify-left items-left slogan font-regular" style="font-size: clamp(1.2rem, 3vw, 2.4rem);">
+<h2 class="relative flex w-full px-8 py-4 text-xl italic tracking-tight text-gray-800 bg-white md:text-3xl justify-left items-left slogan font-regular" >
   {frontmatter.slogan}
 </h2>
 
 <section class="grid grid-cols-1 gap-4 bg-gray-200 md:grid-cols-3">
   <!-- First Column: 66% Width -->
   <div class="relative col-span-2 p-6 overflow-hidden">
-    <a href={frontmatter.mapPage} target="_blank" rel="noopener noreferrer">
+    <a href={frontmatter.mapPage} rel="noopener noreferrer">
       <img 
         src={frontmatter.mapUrl} 
         alt={frontmatter.mapAlt}  
         class="w-full h-auto"
       >
     </a>
+    <p class="p-0 m-0 text-sm italic text-center text-gray-500 md:hidden">Click on the map to see in full resolution</p>
   </div>
 
   <!-- Second Column: 33% Width -->
-  <div class="col-span-1 space-y-4 border-l-[16px] border-solid border-blue-200 px-4 pt-10">
+  <div class="col-span-1 space-y-4 border-l-[16px] md:border-solid md:border-blue-200 pr-4 pl-10 md:px-4 pt-0 md:pt-10">
 
 
-    <section class="relative pt-8 pb-12 text-xl font-bold leading-6 station">
+    <section class="relative hidden pt-8 pb-12 text-xl font-bold leading-6 md:block station">
       <img src="./images/arrow.svg" class="arrow" />
       <p>Click on the map to see in a full resolution.</p>
     </section>
