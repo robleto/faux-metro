@@ -1,0 +1,58 @@
+---
+// src/components/Header.astro
+---
+
+<header class="bg-gray-800 text-white p-4 flex flex-row justify-between items-center">
+  <div class="flex flex-col md:flex-row">
+    <h1 class="text-xl grid place-items-center font-medium md:pr-3">Faux Metro</h1>
+    <p class="text-xs grid place-items-center  text-gray-300">Transit maps to ease the journey around fantastical destinations</p>
+  </div>
+
+  <div class="relative">
+    <button 
+      class="bg-gray-700 text-white text-sm px-5 py-2 rounded-md focus:outline-none flex items-center" 
+      id="dropdownButton"
+    >
+      Select a Metro
+      <svg 
+        class="w-4 h-4 ml-2 transition-transform duration-200" 
+        id="caretIcon"
+        xmlns="http://www.w3.org/2000/svg" 
+        fill="none" 
+        viewBox="0 0 24 24" 
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+    <div class="absolute right-0 mt-2 w-48 z-50 bg-white text-gray-800 rounded-md shadow-lg hidden" id="dropdownMenu">
+      <a href="/got-overview" class="block px-4 py-2 hover:bg-gray-100">Game of Thrones</a>
+      <a href="/lotr-overview" class="block px-4 py-2 hover:bg-gray-100">Lord of the Rings</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const dropdownButton = document.getElementById('dropdownButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    const caretIcon = document.getElementById('caretIcon');
+
+    if (dropdownButton && dropdownMenu && caretIcon) {
+      dropdownButton.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('hidden');
+        caretIcon.classList.toggle('rotate-180');
+      });
+
+      document.addEventListener('click', (event) => {
+        const target = event.target as Node | null;
+
+        if (target && !dropdownButton.contains(target) && !dropdownMenu.contains(target)) {
+          dropdownMenu.classList.add('hidden');
+          caretIcon.classList.remove('rotate-180');
+        }
+      });
+    }
+  });
+</script>
+

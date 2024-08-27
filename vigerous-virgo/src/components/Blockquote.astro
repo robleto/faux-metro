@@ -1,0 +1,58 @@
+---
+interface Props {
+  quote: string;
+  cite: string;
+  imgUrl: string;
+}
+
+const { quote, cite, imgUrl } = Astro.props;
+---
+
+<blockquote class="relative bg-white border-2 border-gray-300  rounded-xl p-4 max-w-xl mx-auto mb-[100px]">
+  {quote}
+  <span class="quote-corner"></span>
+  <img 
+    src={imgUrl}
+    alt={cite} 
+    class="absolute bottom-[-60px] right-2 w-16 h-16 rounded-full border border-gray-300"
+  />
+  <cite class="absolute bottom-[-80px] right-4 text-center block mt-14 text-sm text-gray-600">
+    {cite}
+  </cite>
+</blockquote>
+
+<style>
+.quote-corner {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 80px;
+  width: 30px;
+  height: 20px;
+  background-color: white;
+  border-bottom-left-radius: 100%;
+  border: 2px solid #d1d5db; /* Tailwind's gray-300 */
+  border-top: none;
+}
+
+blockquote img {
+  left: initial;
+  right: 10px;
+}
+
+blockquote:nth-child(odd) img {
+  left: 10px;
+  right: initial;
+}
+blockquote:nth-child(odd) cite {
+  left: 15px;
+  right: initial;
+}
+blockquote:nth-child(odd) .quote-corner {
+  left: 80px;
+  right: initial;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 100%;
+}
+
+</style>

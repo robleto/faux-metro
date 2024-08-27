@@ -1,0 +1,55 @@
+/* src/styles/global.css */
+@tailwind base;
+
+@font-face {
+  font-family: 'Libre Bodoni';
+  src: url('/fonts/LibreBodoni-Italic.woff2') format('woff2'),
+       url('/fonts/LibreBodoni-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+h2.slogan {
+  font-family: 'Libre Bodoni', serif;
+}
+
+
+.about p {
+  margin-bottom: 20px;
+}
+
+.junction:before,
+.station:before{
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: -5px;
+}
+.junction:before{
+  background-image: url('/images/junction.svg');
+  left: -45px;
+  width: 40px;
+  height: 40px;
+}
+.station:before{
+  background-image: url('/images/stop.svg');
+  left: -40px;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.arrow {
+  position: absolute;
+  transform: translateX(-75%);
+  top: -15px;
+  width: 60%;
+  height: 60%;
+}
+
+
+
+
+@tailwind components;
+@tailwind utilities;
