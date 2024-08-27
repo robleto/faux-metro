@@ -1,0 +1,45 @@
+  ---
+interface Props {
+  show: string;
+  short: string;
+  map: string;
+  title: string;
+}
+
+const { show, short, map, title } = Astro.props;
+---
+  
+  <a 
+    href={`/${short}-overview`}
+    class="block my-8"
+    id={map}
+    >
+    
+  	<section class="relative w-auto h-[250px] bg-gray-200 flex flex-row px-5 mx-8 overflow-hidden">
+    <img 
+      src={`/images/${map}.png`}
+      alt={`Metro Map of ${title}`}
+      class="absolute inset-0 object-cover object-top w-full h-full border-b-[1rem] border-white" 
+  />
+  <div class="relative z-30 flex flex-col justify-end">
+    <p 
+      class="p-0 m-0 mb-[-8px] leading-none text-gray-300 uppercase"
+      style="font-size: clamp(1.2rem, 2vw, 2.6rem);" 
+    >
+      {show}
+    </p>
+    <h1 
+      class="p-0 m-0 font-bold leading-none text-white"
+      style="font-size: clamp(4rem, 6vw, 10rem); margin-bottom: .4rem"  
+    >
+      {title}
+    </h1>
+  </div>
+	<img 
+    src={`/maps/${map}.svg`}
+    alt={`Metro Map of ${title}`}
+    class="absolute rotate-[15deg] right-[3rem] w-[40%] border-b-[20px] border-white" 
+		style=" "
+  />
+</section>
+</a>

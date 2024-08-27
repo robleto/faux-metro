@@ -1,18 +1,36 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
 title: 'Faux Metro'
 ---
 
 <Layout title="Faux Metro">
-	<main>
-		<h1>Welcome to Fantasy Maps</h1>
-		<ul>
-			<li><a href="/got-overview">Game of Thrones - Map Overview</a></li>
-			<li><a href="/lotr-overview">Lord of the Rings - Map Overview</a></li>
-			<li><a href="/got-map">Full Game of Thrones Map</a></li>
-			<li><a href="/lotr-map">Full Lord of the Rings Map</a></li>
-		</ul>
-	</main>
+	
+<h2 class="relative flex items-center w-full px-[15%] pt-8 italic leading-[115%] tracking-tight text-gray-800 slogan font-regular text-center" style="font-size: clamp(3rem, 4vw, 5rem);">
+ Transit maps to ease the journey around fantastical destinations. 
+</h2>
+
+	<div class="px-8">
+		
+	<Hero 
+		show="Game of Thrones" 
+		short="got"
+		map="westeros"
+		title="Westeros" />
+
+
+	<Hero 
+		show="Lord of the Rings" 
+		short="lotr"
+		map="middle-earth"
+		title="Middle-Earth" />
+
+
+</div>
+
+
+
+
 </Layout>
 
 <style>

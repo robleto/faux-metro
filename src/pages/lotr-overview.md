@@ -12,20 +12,22 @@ mapPage: 'lotr-map'
 
 about: 'About Middle Earth Transit'
 
-quote1: 'This could have saved me three books of just walking.'
-quote1Img: 'arya.png'
-quote1Cite: 'Arya S.'
+quote1: 'I will take the Metro, though I do not know the way.'
+quote1Img: 'images/middle-earth/frodo.png'
+quote1Cite: 'Frodo B.'
 
-quote2: 'I drink and I know the Westro train schedule.'
-quote2Img: 'tyrion.png'
-quote2Cite: 'Tyrion L.'
+quote2: 'Not all those who wander are lost, when they have this new Metro map.'
+quote2Img: 'images/middle-earth/bilbo.png'
+quote2Cite: 'Bilbo B.'
 
-quote3: 'I will shield my Queen&amp;s back and keep her counsel and if need be give her my Westros metro card.'
-quote3Img: 'brianne.png'
-quote3Cite: 'Brianne T.'
+quote3: 'All we have to decide is where to take the Metro in the time that is given us.'
+quote3Img: 'images/middle-earth/gandalf.png'
+quote3Cite: 'Gandalf G.'
 
 ---
 
-The Westro transit project was the Spring of 308AC with the White Line across the wall and finished in 322AC with the extension of the Blue Line out to the Step Stones.
+The lessons learned -- from narrowing  resisting darkness overtaking the world at the end of the Third Age -- was that there needed to be more expedient means for getting across Middle-Earth than traveling on foot or relying on eagles.
 
-Westro Metro was conceived by the people of Westeros as a more pragmatic approach for uniting the Seven Kingdoms after the fall of most of the major houses during the Game of Thrones.
+The Middle-Earth Transit initiative began in 3022 just at the onset of the Fourth Age, the dominion of man.  
+
+The White Line was the first completed, following the path of the Beacons of Gondor. The  project concluded when the Red Line circling Mordor was completed in 3034.
