@@ -27,13 +27,13 @@ h2.slogan {
   top: -5px;
 }
 .junction:before{
-  background-image: url('/images/junction.svg');
+  background-image: url('./images/junction.svg');
   left: -45px;
   width: 40px;
   height: 40px;
 }
 .station:before{
-  background-image: url('/images/stop.svg');
+  background-image: url('./images/stop.svg');
   left: -40px;
   top: 30px;
   width: 30px;

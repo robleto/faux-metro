@@ -11,31 +11,31 @@ const { frontmatter } = Astro.props;
   <img 
     src={frontmatter.imageUrl} 
     alt={frontmatter.title} 
-    class="absolute inset-0 w-full h-full object-cover object-top" 
+    class="absolute inset-0 object-cover object-top w-full h-full" 
   />
   <div class="relative z-30 flex flex-col justify-end">
     <p 
-      class="text-gray-300 uppercase leading-none m-0 p-0"
+      class="p-0 m-0 mb-[-12px] leading-none text-gray-300 uppercase"
       style="font-size: clamp(1.2rem, 2vw, 2.6rem);" 
     >
       {frontmatter.lede}
     </p>
     <h1 
-      class="text-white font-bold leading-none p-0 m-0"
-      style="font-size: clamp(4rem, 10vw, 11.25rem); margin-bottom: -.75rem"  
+      class="p-0 m-0 font-bold leading-none text-white"
+      style="font-size: clamp(4rem, 10vw, 11.25rem); margin-bottom: -1rem"  
     >
       {frontmatter.title}
     </h1>
   </div>
 </section>
 
-<h2 class="slogan relative w-full flex justify-center tracking-tight text-gray-800 items-center pt-8 pb-4 italic font-regular" style="font-size: clamp(3rem, 5vw, 4rem);">
+<h2 class="relative flex w-full px-8 py-4 italic tracking-tight text-gray-800 bg-white justify-left items-left slogan font-regular" style="font-size: clamp(1.2rem, 3vw, 2.4rem);">
   {frontmatter.slogan}
 </h2>
 
-<section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<section class="grid grid-cols-1 gap-4 bg-gray-200 md:grid-cols-3">
   <!-- First Column: 66% Width -->
-  <div class="col-span-2 relative overflow-hidden">
+  <div class="relative col-span-2 overflow-hidden">
     <a href={frontmatter.mapPage} target="_blank" rel="noopener noreferrer">
       <img 
         src={frontmatter.mapUrl} 
@@ -49,20 +49,20 @@ const { frontmatter } = Astro.props;
   <div class="col-span-1 space-y-4 border-l-[16px] border-solid border-blue-200 px-4 pt-10">
 
 
-    <section class="station pb-12 pt-8 text-xl font-bold leading-6 relative">
-      <img src="images/arrow.svg" class="arrow" />
+    <section class="relative pt-8 pb-12 text-xl font-bold leading-6 station">
+      <img src="./images/arrow.svg" class="arrow" />
       <p>Click on the map to see in a full resolution.</p>
     </section>
 
 
-    <section class="about junction pb-8 relative">
-      <h3 class="font-bold text-2xl leading-6 pb-3">{frontmatter.about}</h3>
+    <section class="relative pb-8 about junction">
+      <h3 class="pb-3 text-2xl font-bold leading-6">{frontmatter.about}</h3>
       <slot />
     </section>
 
 
-   <section class="junction relative">
-      <h3 class="font-bold text-2xl leading-6  pb-3">What People are Saying</h3>
+   <section class="relative junction">
+      <h3 class="pb-3 text-2xl font-bold leading-6">What People are Saying</h3>
 
       <Blockquote quote={frontmatter.quote1} cite={frontmatter.quote1Cite} imgUrl={frontmatter.quote1Img} />
 

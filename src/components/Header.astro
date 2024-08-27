@@ -2,15 +2,17 @@
 // src/components/Header.astro
 ---
 
-<header class="bg-gray-800 text-white p-4 flex flex-row justify-between items-center">
+<header class="flex flex-row items-center justify-between p-4 text-white bg-gray-800">
   <div class="flex flex-col md:flex-row">
-    <h1 class="text-xl grid place-items-center font-medium md:pr-3">Faux Metro</h1>
-    <p class="text-xs grid place-items-center  text-gray-300">Transit maps to ease the journey around fantastical destinations</p>
+    <a href="/">
+      <h1 class="grid text-xl font-medium place-items-center md:pr-3">Faux Metro</h1>
+    </a>
+    <!-- <p class="grid text-xs text-gray-300 place-items-center">Transit maps to ease the journey around fantastical destinations</p> -->
   </div>
 
   <div class="relative">
     <button 
-      class="bg-gray-700 text-white text-sm px-5 py-2 rounded-md focus:outline-none flex items-center" 
+      class="flex items-center px-5 py-2 text-sm text-white bg-gray-700 rounded-md focus:outline-none" 
       id="dropdownButton"
     >
       Select a Metro
@@ -25,7 +27,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
       </svg>
     </button>
-    <div class="absolute right-0 mt-2 w-48 z-50 bg-white text-gray-800 rounded-md shadow-lg hidden" id="dropdownMenu">
+    <div class="absolute right-0 z-50 hidden w-48 mt-2 text-gray-800 bg-white rounded-md shadow-lg" id="dropdownMenu">
       <a href="/got-overview" class="block px-4 py-2 hover:bg-gray-100">Game of Thrones</a>
       <a href="/lotr-overview" class="block px-4 py-2 hover:bg-gray-100">Lord of the Rings</a>
     </div>
