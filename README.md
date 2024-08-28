@@ -1,54 +1,43 @@
-# Astro Starter Kit: Basics
+# Faux Metro
+ Transit maps to ease the journey around fantastical destinations.
 
-```sh
-npm create astro@latest -- --template basics
-```
+![FauxMetro.art](https://cdn.dribbble.com/userupload/16290432/file/original-27caeb0c83105d966fcb0884b6159c3c.png?resize=1504x1206)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Hello there 👋, thanks for visiting.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+I have a fascination with the artistry of mapping a city's subway / metro / tube lines. The style that I've grown most accustomed to seeing from years of commuting from Rockville, Maryland to Alexandria, Virginia is the Washington DC Metro system. The straight lines, clean angles and willingness to be slightly inaccurate for the sake of the map being more usable always resonated with me.  
 
-## 🚀 Project Structure
+This is a little experiment to play with digital illustration and explore visual organization through imagining metro systems for some fantastical locations and hopefully making the web just a little more fun in the process
 
-Inside of your Astro project, you'll see the following folders and files:
+. . .
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Code and Tools
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+This site was created with: **Astro**, **Tailwind**, **Typescript**, **HTML**, and **CSS** 
 
-Any static assets, like images, can be placed in the `public/` directory.
+Tools used to build this site:  **Figma**, **VS Code**, **Github**, **Netlify**, and **ChatGPT**  
 
-## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+. . .
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Authors
+
+Greg Robleto - [@robleto](https://www.github.com/robleto)
+
+. . .
+
+
+## Roadmap
+
+- Design and add additional locatoins
+
+. . .
+
+
+## Requests?
+
+What fantasy locatoin would you like to see added next?  Let me know.
