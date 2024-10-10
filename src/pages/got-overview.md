@@ -9,7 +9,7 @@ slogan: 'Uniting the Seven Kingdoms'
 
 mapUrl: '../maps/westeros.svg'
 mapAlt: 'Metro map of Westeros'
-mapPage: './got-map'
+mapPage: '../got-map'
 
 about: 'About Westros Transit'
 

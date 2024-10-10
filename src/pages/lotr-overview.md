@@ -8,7 +8,7 @@ slogan: 'No one should have to walk to Mordor'
 
 mapUrl: '../maps/middle-earth.svg'
 mapAlt: 'Metro map of Middle-Earth'
-mapPage: './lotr-map'
+mapPage: '../lotr-map'
 
 about: 'About Middle Earth Transit'
 
