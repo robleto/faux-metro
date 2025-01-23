@@ -24,6 +24,7 @@ quote3: 'Dancing through life is easier when the trains are on time.'
 quote3Img: '../images/oz/fiyaro.png'
 quote3Cite: 'Fiyero'
 
+
 ---
 
 A metro system in Oz would make travel faster and safer, avoiding treks through deadly poppies, enchanted forests, and Kalidah-infested woods. Instead of long walks on winding brick roads, passengers could zip between cities without fear of falling asleep in cursed fields or dodging angry trees.
